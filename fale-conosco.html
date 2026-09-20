@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fale Conosco - STEM Imobiliária</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8e1d9;
+            color: #111;
+        }
+
+        /* BOTÃO VOLTAR */
+
+        .voltar {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+
+            color: #142d4c;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 8px 15px;
+
+            border: 1px solid #c49a4a;
+            border-radius: 20px;
+
+            z-index: 10;
+            transition: 0.3s;
+        }
+
+        .voltar:hover {
+            background-color: #c49a4a;
+            color: white;
+        }
+
+        /* ÁREA DAS IMAGENS */
+
+        .imagens {
+            width: 90%;
+            margin: 0 auto;
+
+            padding-top: 75px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            gap: 20px;
+        }
+
+        .imagens img {
+            width: 100%;
+            height: 265px;
+
+            object-fit: cover;
+        }
+
+        /* ÁREA PRINCIPAL */
+
+        .conteudo {
+            width: 90%;
+            margin: 25px auto 40px;
+
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+
+            gap: 100px;
+        }
+
+        /* FUNCIONAMENTO */
+
+        .funcionamento h1 {
+            font-family: Georgia, serif;
+            font-size: 45px;
+            font-weight: normal;
+
+            margin-bottom: 25px;
+        }
+
+        .funcionamento p {
+            font-size: 23px;
+            line-height: 1.35;
+        }
+
+        /* REDES SOCIAIS */
+
+        .redes {
+            width: 390px;
+            height: 55px;
+
+            margin-top: 45px;
+
+            background-color: #d5c2b1;
+
+            border: 1px solid #c7a98f;
+            border-radius: 30px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 25px;
+        }
+
+        .redes strong {
+            font-size: 16px;
+            margin-right: auto;
+        }
+
+        .icones {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .icone-social {
+            width: 27px;
+            height: 27px;
+            object-fit: contain;
+        }
+
+        /* CONTATO */
+
+        .contato {
+            padding-top: 5px;
+        }
+
+        .contato h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .contato p {
+            font-size: 19px;
+            line-height: 1.25;
+            margin-bottom: 18px;
+        }
+
+        .email {
+            color: #111;
+            text-decoration: underline;
+        }
+
+        .observacao {
+            font-style: italic;
+            margin-top: 10px;
+            margin-bottom: 25px !important;
+        }
+
+        /* RESPONSIVO */
+
+        @media (max-width: 900px) {
+
+            .imagens {
+                grid-template-columns: 1fr;
+            }
+
+            .imagens img {
+                height: 250px;
+            }
+
+            .conteudo {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .redes {
+                width: 100%;
+                max-width: 390px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- BOTÃO VOLTAR -->
+
+    <a href="index.html" class="voltar">
+        ← Voltar
+    </a>
+
+
+    <!-- IMAGENS -->
+
+    <div class="imagens">
+
+        <img src="img/quarto.jpg" alt="Quarto">
+
+        <img src="img/sala.jpg" alt="Sala de jantar">
+
+        <img src="img/cozinha.jpg" alt="Cozinha">
+
+    </div>
+
+
+    <!-- CONTEÚDO -->
+
+    <div class="conteudo">
+
+
+        <!-- FUNCIONAMENTO -->
+
+        <div class="funcionamento">
+
+            <h1>
+                Funcionamento
+            </h1>
+
+            <p>
+                Segunda a sexta-feira<br>
+                9h às 18h<br>
+                Sábado 9h ao meio-dia<br>
+                Domingo só com<br>
+                agendamento.
+            </p>
+
+
+            <div class="redes">
+
+                <strong>
+                    SIGA-NOS
+                </strong>
+
+                <div class="icones">
+
+                    <img
+                        src="img/facebook.png"
+                        class="icone-social"
+                        alt="Facebook"
+                    >
+
+                    <img
+                        src="img/x.png"
+                        class="icone-social"
+                        alt="X"
+                    >
+
+                    <img
+                        src="img/instagram.png"
+                        class="icone-social"
+                        alt="Instagram"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTATO -->
+
+        <div class="contato">
+
+            <h3>
+                Endereço
+            </h3>
+
+            <p>
+                Brasília – DF<br>
+                Setor Comercial Sul, Quadra 09, Bloco B, Sala 305<br>
+                Brasília – DF, 70308–200
+            </p>
+
+            <p class="observacao">
+                O escritório possui vagas preferenciais e rampas de acesso.
+            </p>
+
+
+            <h3>
+                Endereço de email
+            </h3>
+
+            <p>
+                <a
+                    href="mailto:contato@stemimobiliaria.com.br"
+                    class="email"
+                >
+                    contato@stemimobiliaria.com.br
+                </a>
+            </p>
+
+
+            <h3>
+                Telefone
+            </h3>
+
+            <p>
+                (61) 982110140
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
