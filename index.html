@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STEM Imobiliária</title>
+
+    <meta name="description" content="STEM Imobiliária — conheça nossa empresa, nossa equipe, nossos serviços e os imóveis disponíveis em Brasília.">
+
+    <link rel="icon" href="img/amostra.png">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d12;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .menu {
+            width: 90%;
+            max-width: 1100px;
+
+            display: flex;
+            min-height: 500px;
+        }
+
+        /* LADO ESQUERDO */
+
+        .esquerda {
+            width: 57%;
+            background-color: #f7f1f1;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding: 40px;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 25px;
+        }
+
+        .foto {
+            width: 90%;
+            border-radius: 45px 45px 0 0;
+        }
+
+        /* LADO DIREITO */
+
+        .direita {
+            width: 43%;
+            background-color: black;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 40px;
+        }
+
+        .botao {
+            color: white;
+            text-align: center;
+
+            padding: 25px 10px;
+
+            border-bottom: 1px solid white;
+
+            text-decoration: underline;
+
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: #151515;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 700px) {
+
+            .menu {
+                flex-direction: column;
+            }
+
+            .esquerda,
+            .direita {
+                width: 100%;
+            }
+
+            .esquerda {
+                padding: 30px 20px;
+            }
+
+            .direita {
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <!-- LADO ESQUERDO -->
+
+        <div class="esquerda">
+
+            <img src="img/logo.png"
+                 alt="STEM Imobiliária"
+                 class="logo">
+
+            <img src="img/sala.jpg"
+                 alt="Imóvel"
+                 class="foto">
+
+        </div>
+
+
+        <!-- LADO DIREITO -->
+
+        <div class="direita">
+
+            <a href="empresa-perfil.html" class="botao">
+                Perfil da Empresa
+            </a>
+
+            <a href="equipe.html" class="botao">
+                Nossa Equipe
+            </a>
+
+            <a href="imoveis.html" class="botao">
+                Imóveis Disponíveis
+            </a>
+
+            <a href="fale-conosco.html" class="botao">
+                Fale conosco
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
