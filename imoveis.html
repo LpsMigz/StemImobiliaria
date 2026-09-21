@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nossos Serviços - STEM Imobiliária</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #111;
+        }
+
+        /* BOTÃO VOLTAR */
+
+        .voltar {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+
+            color: #142d4c;
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: bold;
+
+            padding: 8px 15px;
+
+            border: 1px solid #c49a4a;
+            border-radius: 20px;
+
+            z-index: 10;
+
+            transition: 0.3s;
+        }
+
+        .voltar:hover {
+            background-color: #c49a4a;
+            color: white;
+        }
+
+        /* TÍTULO */
+
+        .titulo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .titulo h1 {
+            font-size: 30px;
+        }
+
+        /* PRIMEIROS 3 IMÓVEIS */
+
+        .imoveis-pequenos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 5%;
+        }
+
+        .imovel-pequeno {
+            width: 30%;
+        }
+
+        .imovel-pequeno img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .informacao {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .informacao h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .informacao p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* IMÓVEIS GRANDES */
+
+        .imovel-grande {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 60px 8%;
+        }
+
+        .imovel-grande img {
+            width: 55%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .descricao {
+            width: 40%;
+        }
+
+        .descricao h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .descricao p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            .imoveis-pequenos {
+                flex-direction: column;
+            }
+
+            .imovel-pequeno {
+                width: 100%;
+            }
+
+            .imovel-grande {
+                flex-direction: column;
+            }
+
+            .imovel-grande img,
+            .descricao {
+                width: 100%;
+            }
+
+        }
+
+        /* BOTÃO NO CELULAR */
+
+        @media (max-width: 600px) {
+
+            .voltar {
+                position: relative;
+                top: auto;
+                left: auto;
+
+                display: inline-block;
+
+                margin: 20px 0 0 25px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- BOTÃO VOLTAR -->
+
+    <a href="index.html" class="voltar">
+        ← Voltar
+    </a>
+
+
+    <!-- TÍTULO -->
+
+    <header class="titulo">
+        <h1>Nossos Serviços</h1>
+    </header>
+
+
+    <!-- 3 PRIMEIROS IMÓVEIS -->
+
+    <section class="imoveis-pequenos">
+
+        <div class="imovel-pequeno">
+
+            <img src="img/imovel1.jpg" alt="Imóvel 1">
+
+            <div class="informacao">
+
+                <h2>Casa Moderna</h2>
+
+                <p>
+                    Casa moderna e confortável,
+                    ideal para sua família.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="imovel-pequeno">
+
+            <img src="img/imovel2.jpg" alt="Imóvel 2">
+
+            <div class="informacao">
+
+                <h2>Apartamento</h2>
+
+                <p>
+                    Apartamento moderno,
+                    localizado em uma ótima região.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="imovel-pequeno">
+
+            <img src="img/imovel3.jpg" alt="Imóvel 3">
+
+            <div class="informacao">
+
+                <h2>Imóvel Comercial</h2>
+
+                <p>
+                    Espaço ideal para empresas
+                    e novos negócios.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRIMEIRO IMÓVEL GRANDE -->
+
+    <section class="imovel-grande">
+
+        <img src="img/imovel4.jpg" alt="Casa">
+
+        <div class="descricao">
+
+            <h2>Apartamento de alto padrão</h2>
+
+            <p>
+                Um apartamento moderno, confortável
+                e localizado em uma região privilegiada.
+                Possui espaços amplos e acabamento
+                de alta qualidade.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEGUNDO IMÓVEL GRANDE -->
+
+    <section class="imovel-grande">
+
+        <img src="img/imovel5.jpg" alt="Casa">
+
+        <div class="descricao">
+
+            <h2>Casa para toda a família</h2>
+
+            <p>
+                Uma casa espaçosa e confortável,
+                perfeita para quem procura segurança,
+                tranquilidade e qualidade de vida.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TERCEIRO IMÓVEL GRANDE -->
+
+    <section class="imovel-grande">
+
+        <img src="img/imovel6.jpg" alt="Casa">
+
+        <div class="descricao">
+
+            <h2>Casa moderna e sofisticada</h2>
+
+            <p>
+                Um imóvel com arquitetura moderna,
+                ambientes amplos e excelente acabamento,
+                ideal para quem busca conforto e estilo.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
